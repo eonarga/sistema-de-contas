@@ -13,7 +13,7 @@ git clone git@github.com:eonarga/sistema-de-contas.git
 ## 2. Navegue até o diretório do projeto:
 
 ```bash
-cd sistema-contas
+cd sistema-de-contas
 ```
 
 ## 3. Instalação de Dependências:
