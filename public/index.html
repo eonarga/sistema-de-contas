@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas a Pagar e Receber</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Gestão de Contas</h1>
+
+    <!-- Resumo das Contas -->
+    <div id="resumo">
+        <p>Contas a Pagar: <span id="contasPagar">0</span></p>
+        <p>Contas a Receber: <span id="contasReceber">0</span></p>
+        <p>Total de Contas: <span id="totalContas">R$ 0,00</span></p>
+    </div>
+
+    <!-- Formulário para adicionar uma conta -->
+    <h2>Incluir Conta</h2>
+    <form id="contaForm">
+        <input type="text" id="descricao" placeholder="Descrição" required>
+        <input type="number" id="valor" placeholder="Valor" required>
+        <input type="date" id="vencimento" required>
+        <select id="tipo" required>
+            <option value="pagar">Pagar</option>
+            <option value="receber">Receber</option>
+        </select>
+        <button type="submit">Adicionar Conta</button>
+    </form>
+
+    <!-- Tabela de Contas -->
+    <h2>Lista de Contas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Data de Vencimento</th>
+                <th>Tipo</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="contasList"></tbody>
+    </table>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
